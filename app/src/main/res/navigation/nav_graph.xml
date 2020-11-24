@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/spaceListFragment"
-        android:name="com.example.mycleanarchitecture.presentation.screens.list.SpaceListFragment"
+        android:name="com.vdovin.spacedemo.presentation.screens.list.SpaceListFragment"
         android:label="fragment_space_list"
         tools:layout="@layout/fragment_space_list">
         <action
@@ -19,13 +19,13 @@
             app:popExitAnim="@anim/exit_to_right">
             <argument
                 android:name="SPACE_KEY"
-                android:defaultValue="-1"
-                app:argType="integer" />
+                android:defaultValue="-1L"
+                app:argType="long" />
         </action>
     </fragment>
     <fragment
         android:id="@+id/spaceDetails"
-        android:name="com.example.mycleanarchitecture.presentation.screens.detail.SpaceDetailsFragment"
+        android:name="com.vdovin.spacedemo.presentation.screens.detail.SpaceDetailsFragment"
         android:label="fragment_space_details"
         tools:layout="@layout/fragment_space_details" />
 </navigation>
